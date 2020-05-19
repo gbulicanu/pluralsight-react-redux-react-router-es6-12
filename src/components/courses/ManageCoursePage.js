@@ -54,7 +54,7 @@ function ManageCoursePage({
         history.push("/courses");
       })
       .catch((error) => {
-        setSaving(true);
+        setSaving(false);
         setErrors({ onSave: error.message });
       });
   }
