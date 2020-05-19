@@ -35,7 +35,7 @@ class CoursesPage extends React.Component {
     try {
       await this.props.actions.deleteCourse(course);
     } catch (error) {
-      toast.error("Delete failed. " + error.message, { autoClose: false });
+      toast.error(`Delete failed. ${error.message}`, { autoClose: false });
     }
   };
 
